@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Main</a></li>
-            <li><a href="#">Learnings</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Journey</a></li>
-            <li><a href="#">contacts</a></li>
+    <nav class="bg-slate-600">
+        <ul class="flex justify-between">
+          <div class="flex justify-between">
+            <li class="my-3 mx-5 decoration-lime-400"><a class="" href=".main">Main</a></li>
+            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".learnings">Learnings</a></li>
+            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".project">Projects</a></li>
+            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".journey">Journey</a></li>
+          </div>
+            <li class="my-3 mx-5"><a href="#">socials</a></li>
         </ul>
     </nav>
 
-    <section>
+    <section id="main" class="h-100vh">
         <h1>Hello I am anubhav, My specialities are in web deelopment and I am also working in some most effivient projects</h1>
     </section>
     <section>
