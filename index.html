@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -26,24 +27,25 @@
       </style>
 </head>
 <body>
-    <nav class="bg-slate-600">
-        <ul class="flex justify-between">
-          <div class="flex justify-between">
-            <li class="my-3 mx-5 decoration-lime-400"><a class="" href=".main">Main</a></li>
-            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".learnings">Learnings</a></li>
-            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".project">Projects</a></li>
-            <li class="my-3 mx-5"><a class="decoration-lime-400" href=".journey">Journey</a></li>
-          </div>
-            <li class="my-3 mx-5"><a href="#">socials</a></li>
-        </ul>
-    </nav>
-
-    <section id="main" class="h-100vh">
-        <h1>Hello I am anubhav, My specialities are in web deelopment and I am also working in some most effivient projects</h1>
+  
+  <section id="main" class="h-screen bg-[url('./assets/computer.jpg')] bg-cover bg-center relative ">
+      <nav>
+          <ul class="flex justify-between">
+            <div class="flex justify-between">
+              <li class="my-3 mx-5 "><a class="text-slate-950 font-kanit" href="#main">Main</a></li>
+              <li class="my-3 mx-5"><a class="text-slate-950 font-kanit" href="#Learnings">Learnings</a></li>
+              <li class="my-3 mx-5"><a class="text-slate-950 font-kanit" href="#project">Projects</a></li>
+              <li class="my-3 mx-5"><a class="text-slate-950 font-kanit" href="3journey">Journey</a></li>
+            </div>
+              <li class="my-3 mx-5"><a class="text-stone-50 font-kanit" href="#">socials</a></li>
+          </ul>
+      </nav>
+      <div class="absolute bottom-0 pb-36">
+        <h1 class="text-stone-50 px-10 pt-10 text-9xl">Anubhav <span class="font-black bg-slate-950">Dubey</span></h1>
+        <h4 class="text-stone-50 px-10  text-xl">I am a <p>web developer</p><p>content creator</p><p>vedio editor</p> </h4>
+      </div>
     </section>
-    <section>
-        <h4>Hello here I am showcasing my learnings and what i am learing </h4>
-
+    <section id="Learnings" class="h-screen">
         <ul>
             <li>Html</li>
             <li>css</li>
@@ -54,7 +56,7 @@
             <li>java</li>
         </ul>
     </section>
-    <section>
+    <section id="project" class="h-screen">
         <li><a href="https://anubhavprogramer.github.io/headphone/">Headphone website</a></li>
         <li><a href="https://github.com/Anubhavprogramer/anubhav-s-news-app">News app</a></li>
         <li><a href="https://github.com/Anubhavprogramer/anubhav-s-news-app">TextDom</a></li>
