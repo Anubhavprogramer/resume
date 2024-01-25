@@ -3,3 +3,28 @@
 body{
     font-family: 'Questrial', sans-serif;
 }
+.wraper{
+    display: block;
+    width: 200px;
+
+}
+
+.text{
+    width: 200px;
+    margin-left: 7px;
+    padding-right: 3px;
+    color: rgb(255, 243, 14);
+    border-right: 4px solid white;
+    overflow: hidden;
+    animation: typing 4s steps(10) infinite,
+                cursor 0.5s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
