@@ -1051,6 +1051,11 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1062,6 +1067,11 @@ video {
 @media (min-width: 1280px) {
   .xl\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
