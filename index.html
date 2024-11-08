@@ -11,7 +11,16 @@
 </head>
 
 <body class="bg-gradient-to-b from-primary to-white ">
-  <div class="main">
+  <!-- loading animation -->
+  <div class="Loading bg-black w-full h-screen flex justify-center items-center flex-col">
+    <div class="ball bg-white h-4 w-4 rounded-full"></div>
+    <div class="loading_text  h-0 overflow-hidden p-0">
+        <span
+            class="text-white leading-none font-extrabold inline-block text-7xl  font-Lexend">Anubhav_x_10_tion</span>
+    </div>
+</div>
+  <div id="main" class="main hidden">
+  
     <!-- home -->
     <div class="h-screen w-full ">
       <div class="h-[17%] absolute p-10 w-full gap-4 flex flex-col md:flex-row justify-between items-center ">
@@ -22,7 +31,8 @@
           <span id="time">Time</span>
         </div>
       </div>
-      <div id="home" class="flex justify-center items-center flex-col h-screen">
+      <div id="home" class="flex justify-center overflow-hidden  items-center flex-col h-screen">
+        <!-- <div class="w-60 h-60 bg-black rounded-full absolute top-0 left-0 z-50" id="cursor"></div> -->
         <span class="font-extrabold font-Lexend text-2xl">AX</span>
         <span class="text-4xl md:text-6xl xl:text-9xl font-Lexend -translate-x-1/4">Passionate-</span>
         <span class="text-4xl md:text-6xl xl:text-9xl font-Lexend  translate-x-1/4">Innovative-</span>
@@ -131,12 +141,18 @@
       </div>
     </div>
 
-    <div class="h-96 bg-secondary text-white flex flex-col justify-center items-center gap-5 ">
+    <div id="footer" class=" h-96 overflow-hidden bg-secondary text-white flex flex-col justify-center items-center gap-5 ">
       <p class="text-1xl font-Lexend" >WANT TO WORK WITH ME?</p>
       <p class="text-5xl font-Lexend" >Say hii!</p>
       <p><a class="text-4xl md:text-6xl xl:text-9xl font-Lexend" href="/">hey@Anubhav</a></p>
     </div>
   </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./Scripts/Gsap.js"></script>
   <script src="./src/script.js"></script>
 </body>
 
