@@ -7,10 +7,15 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/output.css">
-
+  <style>
+    #cursor {
+      mix-blend-mode: difference;
+    }
+  </style>
 </head>
 
 <body class="bg-gradient-to-b from-primary to-white ">
+<!-- <body class=""> -->
   <!-- loading animation -->
   <div class="Loading bg-black w-full h-screen flex justify-center items-center flex-col">
     <div class="ball bg-white h-4 w-4 rounded-full"></div>
@@ -32,11 +37,11 @@
         </div>
       </div>
       <div id="home" class="flex justify-center overflow-hidden  items-center flex-col h-screen">
-        <!-- <div class="w-60 h-60 bg-black rounded-full absolute top-0 left-0 z-50" id="cursor"></div> -->
-        <span class="font-extrabold font-Lexend text-2xl">AX</span>
-        <span class="text-4xl md:text-6xl xl:text-9xl font-Lexend -translate-x-1/4">Passionate-</span>
-        <span class="text-4xl md:text-6xl xl:text-9xl font-Lexend  translate-x-1/4">Innovative-</span>
-        <span class="text-4xl md:text-6xl xl:text-9xl font-Lexend -translate-x-1/4">Disciplined</span>
+        <div class="cursor w-64 h-64 rounded-full pointer-events-none z-50 absolute top-0 left-0 bg-black" id="cursor">Radhe Radhe</div>
+        <span id="text" class="font-extrabold font-Lexend text-2xl">AX</span>
+        <span id="text" class="text-4xl md:text-6xl xl:text-9xl font-Lexend -translate-x-1/4">Passionate-</span>
+        <span id="text" class="text-4xl md:text-6xl xl:text-9xl font-Lexend  translate-x-1/4">Innovative-</span>
+        <span id="text" class="text-4xl md:text-6xl xl:text-9xl font-Lexend -translate-x-1/4">Disciplined</span>
         <div
           class="h-16 w-16 border-2 absolute bottom-44 right-4 md:right-64 rotate-90 hover:rotate-0 transition-all duration-300 cursor-pointer border-secondary rounded-full flex justify-center items-center">
           <span class="text-5xl font-semibold">↓</span>
@@ -62,59 +67,102 @@
 
       <div class="p-10  flex ">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+          <!-- card 1 -->
+          <div class="relative w-full h-full cursor-pointer bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/236x/56/08/76/56087642270b07bff3d814e5aa6e47a0.jpg" alt="Project Image">
+            
+            <!-- Overlay with buttons and website name -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <!-- Website Name -->
+                <span class="text-white absolute top-8 left-7 text-4xl font-semibold mb-4 opacity-100">Inscribe</span>
+                
+                <!-- Buttons -->
+                <div class="flex">
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                      <a href="https://github.com/Anubhavprogramer/inscribe">
+                        <img src="./assets/github (1).png" alt="GitHub" class="w-6 h-6">
+                      </a>  
+                    </button>
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                      <a href="https://inscribe-psi.vercel.app/"></a>  
+                      <img src="./assets/forward.png" alt="Forward" class="w-6 h-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+          <!-- card 2 -->
+          <div class="relative w-full h-full cursor-pointer bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/474x/27/cf/61/27cf61b3f3575ee384811e7ca072b0a5.jpg" alt="Project Image">
+            
+            <!-- Overlay with buttons and website name -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <!-- Website Name -->
+                <span class="text-white absolute top-8 left-7 text-4xl font-semibold mb-4 opacity-100">Grubstake</span>
+                
+                <!-- Buttons -->
+                <div class="flex">
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                      <a href="https://github.com/Anubhavprogramer/Grubstake-Frontend">
+                        <img src="./assets/github (1).png" alt="GitHub" class="w-6 h-6">
+                      </a>  
+                    </button>
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                      <a href="https://grubstake-frontend.vercel.app/">
+                        <img src="./assets/forward.png" alt="Forward" class="w-6 h-6">
+                      </a>  
+                    </button>
+                </div>
+            </div>
+        </div>
+          <!-- card 3 -->
+          <div class="relative w-full h-full cursor-pointer bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="./assets/d56a3a107bfdc92a6dce04fb9fe930c1.jpg" alt="Project Image">
+            
+            <!-- Overlay with buttons and website name -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <!-- Website Name -->
+                <span class="text-white absolute top-8 left-7 text-4xl font-semibold mb-4 opacity-100">Bookswagon</span>
+                
+                <!-- Buttons -->
+                <div class="flex">
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                        <a href="https://github.com/Anubhavprogramer/interfacewizardsReimagineRound1"></a><img src="./assets/github (1).png" alt="GitHub" class="w-6 h-6">
+                    </button>
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                        <a href="https://interfacewizards-reimagine-round1.vercel.app/">
+                          <img src="./assets/forward.png" alt="Forward" class="w-6 h-6">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+          <!-- card 4 -->
+          <div class="relative w-full h-full cursor-pointer bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="./assets/2.jpeg" alt="Project Image">
+            
+            <!-- Overlay with buttons and website name -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <!-- Website Name -->
+                <span class="text-white absolute top-8 left-7 text-4xl font-semibold mb-4 opacity-100">LittleBox</span>
+                
+                <!-- Buttons -->
+                <div class="flex">
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                        <a href="https://github.com/Anubhavprogramer/interfacewizardsReimagineRound2">
+                          <img src="./assets/github (1).png" alt="GitHub" class="w-6 h-6">
+                        </a>
+                    </button>
+                    <button class="z-20 py-2 px-4 rounded-md m-2 shadow-md bg-white bg-opacity-90">
+                        <a href="https://littlebox-m20pdp4k3-anubhavs-projects-f19884ad.vercel.app/">
+                          <img src="./assets/forward.png" alt="Forward" class="w-6 h-6">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
           
-          <div class="relative w-full h-full cursor-pointer  bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:opacity-70 hover:scale-105">
-            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/474x/19/e3/81/19e38116ad3b78bc5c1289198f6b4afa.jpg" alt="Project Image">
-            
-            <!-- Overlay with buttons -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/github.png" alt="">
-              </button>
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/forward.png" alt="">
-              </button>
-            </div>
-          </div>
-          <div class="relative w-full h-full cursor-pointer  bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:opacity-70 hover:scale-105">
-            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/474x/19/e3/81/19e38116ad3b78bc5c1289198f6b4afa.jpg" alt="Project Image">
-            
-            <!-- Overlay with buttons -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/github.png" alt="">
-              </button>
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/forward.png" alt="">
-              </button>
-            </div>
-          </div>
-          <div class="relative w-full h-full cursor-pointer  bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:opacity-70 hover:scale-105">
-            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/474x/19/e3/81/19e38116ad3b78bc5c1289198f6b4afa.jpg" alt="Project Image">
-            
-            <!-- Overlay with buttons -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/github.png" alt="">
-              </button>
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/forward.png" alt="">
-              </button>
-            </div>
-          </div>
-          <div class="relative w-full h-full cursor-pointer  bg-pink-500 overflow-hidden shadow-lg transition-transform transform hover:opacity-70 hover:scale-105">
-            <img class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 hover:opacity-50" src="https://i.pinimg.com/474x/19/e3/81/19e38116ad3b78bc5c1289198f6b4afa.jpg" alt="Project Image">
-            
-            <!-- Overlay with buttons -->
-            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/github.png" alt="">
-              </button>
-              <button class=" z-20 py-2 px-4 rounded-md m-2 shadow-md">
-                <img src="./assets/forward.png" alt="">
-              </button>
-            </div>
-          </div>
+          
 
           
           
@@ -132,12 +180,12 @@
 
       </div>
       <div class="flex justify-center  items-center gap-10 ">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/google.png" alt="">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/github.png" alt="">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/linkedin.png" alt="">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/insta.png" alt="">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/discord.png" alt="">
-        <img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/youtube.png" alt="">
+        <a href=""><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/google.png" alt=""></a>
+        <a href="https://github.com/Anubhavprogramer"><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/anubhav-dubey-b7004125a/"><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/linkedin.png" alt=""></a>
+        <a href="https://www.instagram.com/x_10_tion/"><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/insta.png" alt=""></a>
+        <a href=""><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/discord.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCcfBbZ0Mb1yvrFZ88ozFEHA"><img class="w-5 h-5 hover:scale-125 duration-100 transition-all cursor-pointer " src="./assets/youtube.png" alt=""></a>
       </div>
     </div>
 

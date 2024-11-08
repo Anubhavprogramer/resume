@@ -67,6 +67,7 @@ function init(){
     document.querySelector(".main").classList.remove("hidden");
     textAnimation();
     footerAnimation();
+    customCursor();
 }
 
 window.addEventListener('load', function() {
@@ -98,6 +99,40 @@ function footerAnimation() {
             toggleActions: 'play none none reverse',   
             markers: false        
         }
+    });
+}
+
+function customCursor() {
+    const cursor = document.getElementById('cursor');
+    const home = document.getElementById('home');
+    
+    // GSAP Animation for cursor movement
+    home.addEventListener('mousemove', (e) => {
+        gsap.to(cursor, {
+            x: e.pageX - 100,
+            y: e.pageY - 100,
+            duration: 0.1,
+            ease: "power2.out"
+        });
+        console.log(e.pageX, e.pageY);
+        
+        // Remove 'hidden' class if it was added (in case cursor re-enters viewport)
+        cursor.classList.remove('hidden');
+    });
+    
+
+
+    // Hide cursor when leaving viewport
+    home.addEventListener('mouseleave', () => {
+        cursor.classList.add('hidden');
+    });
+    
+    // Show cursor when entering viewport
+    home.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hidden');
+    });
+    home.addEventListener('mouseleave', () => {
+        cursor.classList.add('hidden');
     });
 }
 

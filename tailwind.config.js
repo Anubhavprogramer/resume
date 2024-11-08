@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         Lexend:  ["Lexend", "sans-serif"],
       },
+      
     },
   },
   plugins: [],
